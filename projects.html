@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Projects</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f8fb;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 56px;
+      background-color: #fff;
+      border-bottom: 2px solid #35e0c2;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+    }
+
+    nav ul li a:hover {
+      color: aqua;
+
+    }
+
+    .left {
+      font-size: 1.5rem;
+      margin-right: 30%;
+      margin-left: 3%;
+    }
+
+
+
+    .projects-section {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 40px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .projects-section h2 {
+      text-align: center;
+      font-size: 36px;
+      color: #007acc;
+      margin-bottom: 30px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: #f0f8ff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      transition: 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+      background: #e6f3ff;
+    }
+
+    .project-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #007acc;
+    }
+
+    .project-card p {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .project-card .tags {
+      margin-bottom: 10px;
+    }
+
+    .project-card .tags span {
+      background: #007acc;
+      color: #fff;
+      padding: 4px 10px;
+      margin-right: 6px;
+      border-radius: 6px;
+      font-size: 13px;
+    }
+
+    .project-card a {
+      text-decoration: none;
+      color: #007acc;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      .projects-section h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+   <header>
+    <nav>
+      <div class="left"> Ganesh's Portfolio</div>
+      <div class="right">
+        <ul>
+          <a href="/">
+            <li>Home
+          </a></li>
+          <a href="/about.html">
+            <li>About
+          </a></li>
+          <a href="/services.html">
+            <li>Services
+          </a></li>
+          <a href="/projects.html">
+            <li>Projects
+          </a></li>
+          <a href="/contact.html">
+            <li>Contact Me
+          </a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="projects-section">
+  <h2>My Projects</h2>
+  <div class="project-grid">
+
+    <div class="project-card">
+      <h3>🧪 Mock Test Flask App</h3>
+      <p>A web-based mock test system built using Flask and MySQL. It supports questions, options, timer, and result system.</p>
+      <div class="tags">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Flask</span><span>MySQL</span>
+      </div>
+      <a href="https://github.com/Ganesh-Sonune77/Mock_Test_Flask_App" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>🎵 Music Player Web App</h3>
+      <p>A stylish front-end music player that supports play, pause, next, previous, repeat and shuffle using Audio API.</p>
+      <div class="tags">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Audio API</span>
+      </div>
+      <a href="https://github.com/Ganesh-Sonune77/Music-Player-Web-App" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>⏱ YouTube Watchtime Booster</h3>
+      <p>Python script to help boost YouTube watchtime through automation (for educational use only).</p>
+      <div class="tags">
+        <span>Python</span>
+      </div>
+      <a href="https://github.com/Ganesh-Sonune77/yt_watchtime_booster" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>📝 YouTube Todo Manager</h3>
+      <p>Manage YouTube video tasks like title, duration, and scheduling using a Python-based TODO app.</p>
+      <div class="tags">
+        <span>Python</span><span>Project Management</span>
+      </div>
+      <a href="https://github.com/Ganesh-Sonune77/YouTube-Video-Manager.git" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>📁 File Organizer</h3>
+      <p>Automatically organizes your files by extension (images, docs, audio, etc.) in respective folders.</p>
+      <div class="tags">
+        <span>Python</span><span>OS Module</span>
+      </div>
+      <a href="https://github.com/Ganesh-Sonune77/File-Organizer-" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>📧 Temporary Email Generator Bot</h3>
+      <p>A Telegram bot that generates temporary email and fetches inbox messages in real-time.</p>
+      <div class="tags">
+        <span>Python</span><span>Telegram API</span><span>Bot</span>
+      </div>
+      <a href="https://t.me/DownDoMod_bot" target="_blank">View on GitHub</a>
+    </div>
+
+  </div>
+</section>
+</body>
+</html>

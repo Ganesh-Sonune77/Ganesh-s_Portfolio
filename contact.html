@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contact_me</title>
+            <style>
+              body{
+                margin:0;
+                padding:0;
+                height: 100vh;
+                width:100vw;
+              }
+              nav {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                height: 52px;
+                background-color: #fff;
+                border-bottom: 2px solid #35e0c2;
+              }
+              
+              nav ul {
+                display: flex;
+                justify-content: center;
+                
+              }
+              
+              nav ul li {
+                list-style: none;
+                margin: 0 23px;
+              }
+              
+              nav ul li a {
+                text-decoration: none;
+                color: black;
+              }
+              
+              nav ul li a:hover {
+                color: aqua;
+                
+              }
+              
+              .left {
+                font-size: 1.5rem;
+                margin-right: 30%;
+                margin-left: 3%;
+              }
+              
+              
+              .contact-section {
+                max-width: 700px;
+                margin: 60px auto;
+                padding: 40px;
+                background: #ffffff;
+                border-radius: 12px;
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+                text-align: center;
+              }
+              
+              .contact-section h2 {
+                font-size: 36px;
+                color: #007acc;
+                margin-bottom: 10px;
+              }
+              
+              .contact-subtitle {
+                font-size: 18px;
+                margin-bottom: 30px;
+                color: #555;
+              }
+              
+              .contact-form {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+              }
+              
+              .contact-form input,
+              .contact-form textarea {
+                padding: 15px;
+                border-radius: 8px;
+                border: 1px solid #ccc;
+                font-size: 16px;
+                width: 100%;
+                resize: none;
+              }
+              
+              .contact-form button {
+                background: #007acc;
+                color: white;
+                padding: 14px;
+                border: none;
+                border-radius: 8px;
+                font-size: 16px;
+                cursor: pointer;
+                transition: background 0.3s;
+              }
+              
+              .contact-form button:hover {
+                background: #005eaa;
+              }
+              
+              @media (max-width: 600px) {
+                .contact-section h2 {
+                  font-size: 28px;
+                }
+                
+                .contact-subtitle {
+                  font-size: 16px;
+                }
+              }
+              </style>
+</head>
+<body>
+  
+  
+  <header>
+    <nav>
+      <div class="left"> Ganesh's Portfolio</div>
+      <div class="right">
+        <ul>
+          <a href="/">
+            <li>Home
+            </a></li>
+            <a href="/about.html">
+              <li>About
+              </a></li>
+              <a href="/services.html">
+                <li>Services
+                </a></li>
+                <a href="/projects.html">
+                  <li>Projects
+                  </a></li>
+                  <a href="/contact.html">
+                    <li>Contact Me
+                    </a></li>
+                  </ul>
+                </div>
+              </nav>
+            </header>
+            <section class="contact-section">
+              <h2>Contact Me</h2>
+              <p class="contact-subtitle">Have a project in mind or just want to connect? Let's talk!</p>
+              
+              <form class="contact-form" action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+              </form>
+            </section>
+            
+              </body>
+              </html>
